@@ -3,7 +3,7 @@
 } */
 #navbar{
 flex-direction: column;
-width: ;
+position: sticky;
 }
 #navbar::before{
     height: 110%;
