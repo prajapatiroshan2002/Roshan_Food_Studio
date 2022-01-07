@@ -1,0 +1,217 @@
+/* Css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navigation bar */
+#navbar{
+  display: flex;
+  align-items: center;
+  /* position: relative;
+  z-index: 3; */
+  position: sticky;
+  top: 0px;
+
+}
+/* Logo and image nav */
+#logo{
+
+}
+#logo img{
+    height: 100px;
+    width: 100px;
+    margin-bottom: -32px;
+        margin-top: -14px;
+}
+/* List styling nav */
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    height: 165%;
+    width: 100%;
+    background-color: rgb(230, 100, 25);
+    position: absolute;
+    z-index: -1;
+    opacity: 1;
+    /* top: 0px;
+    left: 0px; */
+
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: 'Balsamiq Sans', cursive;
+    justify-content: center;
+
+}
+#navbar ul li a{
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+#navbar ul li a:hover{
+    color: rgb(241, 186, 103);
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2px ;
+    height: 630px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(Img/main\ home\ wallpaper.jpg) no-repeat center center/cover;
+    height: 703px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.95;
+    top: 0px;
+    left: 0px;
+}
+#home h3{
+    color: rgb(255 106 0);
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    margin-top: -200px;
+}
+#home p{
+    color: rgb(255 129 0);
+    text-align: center;
+    padding: 35px;
+    font-size: 1.57rem;
+    font-family: 'Pushster', cursive;
+    
+}
+/* Utility class */
+.h-primary {
+    font-size: 2.8rem;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    color: rgb(255 0 82);
+}
+.h-secondary{
+    font-size: 1.4rem;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid blanchedalmond;
+    background-color: rgb(255, 135, 80);
+    color: white;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.btn:hover{
+    background-color: rgb(202, 171, 153);
+    cursor: pointer;
+    color: white;
+  
+}
+@media (max-width:445px){
+    #body{
+        background-color: brown;
+        color: black;
+    }
+}
+/* services */
+#services{
+    display: flex;
+    margin: 34px;
+    justify-content: center;
+    align-items: center;
+    
+}
+#services1::before{
+    content: "";
+    position: absolute;
+    background: url(Img/homewallpaper.jpg) no-repeat center center/cover;
+    height: 564px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    margin-top: 10px;
+
+}
+#services .box{
+    border: 2px solid orange;
+    padding: 34px;
+    margin: 3px auto;
+    border-radius: 23px;
+    background-color: rgb(243, 209, 146);
+    margin-bottom: 20px;
+    box-shadow: 10px 10px orange;
+    
+}
+#services .box img{
+    height: 225px;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+}
+#services .box p{
+    /* text-align: center; */
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+/* client section */
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients-section::before{
+    content: "";
+    position: absolute;
+    background: url(img/pancakes-gfc37ee5c9_1920.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 350px;
+    z-index: -1;
+    opacity: 0.4;
+}
+#clients-section{
+    height: 344px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-items img{
+    height: 190px;
+}
+
+.footer {
+    text-align: center;
+    background-color: rgb(230, 100, 25);
+}
+
+.footer-content {
+    padding: 3% 17%;
+    color: #fff;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.footer-icon {
+    margin: 20px 10px;
+    color: #fff;
+}
+.footer a{
+color: #fff;
+}
