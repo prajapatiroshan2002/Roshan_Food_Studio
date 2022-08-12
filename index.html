@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roshan's Food Studio</title>
+    <link rel="structure icon" href="Img/Original logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Pushster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width: 1270px)" href="phone.css">
+    <script src="https://kit.fontawesome.com/9fa01ec5cb.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="Img/Original logo.png" alt="Roshan's food studio">
+        </div>
+        <ul>
+            <li class="items"><a href="#home">Home</a></li>
+            <li class="items"><a href="#services1">Meals</a></li>
+            <li class="items"><a href="#clients-section">Clients</a></li>
+            <li class="items"><a href="tel:9582545476">Call Us</a></li>
+
+        </ul>
+    </nav>
+    <section id="home">
+        <h3 class="h-primary">Welcome to Roshan's Food Studio</h3>
+        <p>In this food Studio you can found all your cravings. And our responsibilty is to provide best and fresh food
+            at your doorstep.
+            So why are you waiting for Order now👇</p>
+        <button class="btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Order
+            now</button>
+    </section>
+    <section id="services1">
+        <h1 class="h-primary center">
+            Our Meals
+        </h1>
+        <div id="services">
+            <div class="box">
+                <img src="Img/Food_item_1.jpg" alt="">
+                <h2 class="h-secondary center">Burger</h2>
+                <p>Burger is starting from just <strong>Rs.50/-</strong> </p>
+            </div>
+            <div class="box">
+                <img src="Img/food_item_2.jpg" alt="">
+                <h2 class="h-secondary center">Momos</h2>
+                <p>Momos is starting from just <strong>Rs.40/-</strong></p>
+            </div>
+            <div class="box">
+                <img src="Img/food_item_3.jpg" alt="">
+                <h2 class="h-secondary center">Pizza</h2>
+                <p>Pizza is starting from just <strong>Rs.120/-</strong></p>
+            </div>
+        </div>
+    </section>
+    <section id="clients-section">
+        <h3 class="h-primary center">Our Clients</h3>
+        <div id="clients">
+            <div class="client-items">
+                <img src="Img/Client 1.png" alt="">
+            </div>
+            <div class="client-items">
+                <img src="Img/Client 2.png" alt="">
+            </div>
+            <!-- <div class="client-items">
+                <img id="client3" src="img/Client 3.png" alt="">
+            </div> -->
+            <div class="client-items">
+                <img src="Img/Client 4.png" alt="">
+            </div>
+        </div>
+    </section>
+    <div>
+        <footer class="footer">
+            <div class="footer-content">
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter footer-icon"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f footer-icon"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram footer-icon"></i></a>
+                <a href="https://gmail.com" target="_blank"><i class="fas fa-envelope footer-icon"></i></a>
+                <p>© Copyright 2022 | Roshan's Food Studio</p>
+                <p>Made with ❤️ by Roshan</p>
+            </div>
+
+        </footer>
+
+        <!--Order confirmed modal -->
+        <div class="popup" id="popup">
+            <img src="/Img/tick.png">
+            <h2>Thank You!</h2>
+            <p>Your Order is confirmed. You will get your Delivery soon.</p>
+            <button type="button" onclick="closePopup()">Ok</button>
+        </div>
+
+        <!-- Order Now button -->
+        <div id="id01" class="modal">
+
+            <form id="orderNowform" class="modal-content animate">
+                <div class="imgcontainer">
+
+                    <img src="logo.png" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="main">
+
+                    <form action="" id="orderForm">
+                        <fieldset>
+                            <legend>
+                                <div class="number">1</div> Your Info:
+                            </legend>
+                            <label for="name">Name:</label><br>
+                            <input type="text" id="name" name="name"><br>
+                            <label for="mail">Email:</label><br>
+                            <input type="email" id="email" name="email"><br>
+                            <label for="phone">Phone:</label><br>
+                            <input type="tel" id="phone" name="phone"><br>
+                            <label for="address" >Address:</label><br>
+                            <textarea id="address" name="address"></textarea>
+                        </fieldset>
+                        <fieldset>
+                            <legend>
+                                <div class="number">2</div> Burger Choice:
+                            </legend>
+                            <input type="radio" id="aaloo" name="aaloo"><label>Aaloo Patty</label>
+                            <input type="radio" id="cheese" name="cheese"><label>Cheese</label><br>
+                            <input type="checkbox" id="Grilled" name="Grilled"><label>Grilled</label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>
+                                <div class="number">3</div> Momos Choice:
+                            </legend>
+                            <input type="radio" id="Soyabean" name="Soyabean"><label>Soyabean</label>
+                            <input type="radio" id="Cauliflower" name="Cauliflower"><label>Cauliflower</label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>
+                                <div class="number">4</div> Pizza Choice:
+                            </legend>
+                            <input type="radio" id="Onion" name="Onion"><label>Onion/Capsicum</label>
+                            <input type="radio" id="Margherita" name="Margherita"><label>Margherita</label><br>
+                            <input type="checkbox" id="extrachees" name="extrachees"><label>Extra Chesse ?</label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>
+                                <div class="number">6</div> Any Allergies/Special Requests:
+                            </legend>
+                            <textarea id="specialrquest" name="specialrquest"></textarea>
+                        </fieldset>
+                        <fieldset>
+                            <legend>
+                                <div class="number">7</div> Payment Mode :
+                            </legend>
+
+                            <input type="checkbox" id="cod" name="cod"><label>Cash On Delivery</label>
+                        </fieldset>
+
+                        <button type="submit" onclick="openPopup()">Place Order</button>
+
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>

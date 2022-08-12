@@ -1,0 +1,50 @@
+/* body{
+    background-color: black;
+} */
+#navbar{
+flex-direction: column;
+position: sticky;
+}
+#navbar::before{
+    height: 110%;
+}
+#navbar ul li{
+    font-size: 1rem;
+}
+#home{
+height: 775px;
+flex-direction: column;
+}
+#home::before{
+height: 782px;
+opacity: 0.9;
+
+}
+#services1{
+    margin-top: -106px;
+}
+#services1::before{
+    height: 1382px;
+    margin-top: -11px;
+}
+#services{
+flex-direction: column;
+}
+/* @media screen and (max-width:445px){
+    #body{
+        background-color: brown;
+        color: black;
+    }
+
+
+} */
+#services .box img{
+height: 93px;
+}
+#clients{
+    flex-wrap: wrap;
+}
+.client-items img{
+
+height: 100px;
+}
